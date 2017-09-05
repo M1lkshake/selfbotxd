@@ -1,0 +1,4 @@
+exports.run = (client, message, args) => {
+	//put your command here
+}
+// when making commands, make sure to name the file "<command name>.js". If you were making a command named "lol", you would name the file "lol.js".

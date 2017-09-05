@@ -1,4 +1,4 @@
-exports.run = (client, message, args) => {
+exports.run = (user, message, args) => {
 	message.delete();
-	client.destroy();
+	user.destroy();
 }

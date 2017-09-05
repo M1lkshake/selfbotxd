@@ -3,9 +3,11 @@ exports.run = (client, message, args) => {
 
 	let tags = JSON.parse(fs.readFileSync("./lib/tags.json", "utf8"));
 
-	var tagadd = args.slice(0).join(' ');
-	var cmd = args[0];
-	tags[cmd] = tagadd;
+	var testing = args;
+	var cmd = testing.shift();
+	var joined = testing.join(' ');
+	
+	tags[cmd] = joined;
 	console.log("[Tags] Tag " + cmd + " added to the database.");
 	message.delete();
 

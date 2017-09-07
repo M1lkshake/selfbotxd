@@ -4,6 +4,7 @@
 const Discord = require('discord.js');
 const user = new Discord.Client();
 const fs = require('fs');
+const log = require('./lib/plugins/logging.js')
 
 const config = require("./config/config.json");
 if(config.UserToken === "Put your ID here.") {
@@ -11,6 +12,8 @@ if(config.UserToken === "Put your ID here.") {
 }
 user.login(config.UserToken);
 
+user.on("warn", log.warn);
+user.on("error", log.err);
 
 fs.readdir("./lib/events/", (err, files) => {
   if (err) return console.error(err);
@@ -32,6 +35,6 @@ user.on("message", message => {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(user, message, args);
   } catch (err) {
-    console.error(err);
+    log.err(err);
   }
 });

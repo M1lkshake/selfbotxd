@@ -11,4 +11,6 @@ In order to use this bot, you need to accept the following semi-official Discord
 
 If you consent and accept to these rules, you may proceed with using my self-bot.
 
-To setup this bot, you need to run setup.bat. All this program does is download the required libraries ((You NEED node.js for this.)) to make sure that this program will work.
+To setup this bot, you need to run setup.bat. All this program does is download the required libraries ((You NEED node.js for this.)) to make sure that this program will work. After that, you will need to run the newly created file run.bat, and it should load up the bot perfectly fine.
+
+If you are a console kind of person, you can navigate to the install folder and execute "node self.js".

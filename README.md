@@ -1,4 +1,4 @@
-M1lkbot is a discord user-bot, meaning that it runs off of YOUR account.
+This program is a discord user-bot, meaning that it runs off of YOUR account.
 
 In order to use this bot, you need to accept the following semi-official Discord rules on selfbots.
 
